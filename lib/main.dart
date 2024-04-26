@@ -8,7 +8,7 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) => CartProvider(),
-      child: const MyApp(),
+      child: const SafeArea(child: MyApp()),
     ),
   );
 }

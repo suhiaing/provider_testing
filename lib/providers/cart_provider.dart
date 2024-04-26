@@ -4,7 +4,7 @@ import '../constants.dart';
 class CartProvider extends ChangeNotifier {
   final List<Products> _items = [];
 
-  List<Products> get item => _items;
+  List<Products> get items => _items;
 
   void nl() {
     notifyListeners();
@@ -25,7 +25,7 @@ class CartProvider extends ChangeNotifier {
     nl();
   }
 
-  double getTotalPrice(List<Products> items) {
+  double getTotalPrice() {
     return items.fold(
         0, (previousValue, element) => previousValue += element.price);
   }
