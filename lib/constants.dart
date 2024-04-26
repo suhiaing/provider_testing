@@ -15,13 +15,13 @@ class Products {
 
 List<Products> products = [
   Products(id: 0, name: "Laptop", price: 10000, color: Colors.amber),
-  Products(id: 1, name: "SmartPhone", price: 10000, color: Colors.lightBlue),
-  Products(id: 2, name: "Samsaung", price: 10000, color: Colors.green),
-  Products(id: 3, name: "Realme", price: 10000, color: Colors.blueGrey),
-  Products(id: 4, name: "Mac", price: 10000, color: Colors.redAccent),
-  Products(id: 5, name: "Apple", price: 10000, color: Colors.purple),
-  Products(id: 6, name: "Desk", price: 10000, color: Colors.lime),
-  Products(id: 7, name: "Bat", price: 10000, color: Colors.black),
+  Products(id: 1, name: "SmartPhone", price: 500, color: Colors.lightBlue),
+  Products(id: 2, name: "Samsaung", price: 200, color: Colors.green),
+  Products(id: 3, name: "Realme", price: 60, color: Colors.blueGrey),
+  Products(id: 4, name: "Mac", price: 780, color: Colors.redAccent),
+  Products(id: 5, name: "Apple", price: 4560.80, color: Colors.purple),
+  Products(id: 6, name: "Desk", price: 90, color: Colors.lime),
+  Products(id: 7, name: "Bat", price: 125, color: Colors.black),
   Products(
       id: 8,
       name: "Pen",
