@@ -1,7 +1,18 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:provider_test_flutter/pages/cart_page.dart';
+import 'package:provider_test_flutter/pages/home_page.dart';
+import 'package:provider_test_flutter/providers/cart_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => CartProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -15,6 +26,10 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      routes: {
+        '/home': (context) => const HomePage(),
+        '/cart': (context) => const CartPage()
+      },
       home: const MyHomePage(),
     );
   }
