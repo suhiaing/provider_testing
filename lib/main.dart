@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_test_flutter/pages/cart_page.dart';
@@ -27,8 +25,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        '/home': (context) => const HomePage(),
-        '/cart': (context) => const CartPage()
+        '/home_page': (context) => const HomePage(),
+        '/cart_page': (context) => const CartPage()
       },
       home: const MyHomePage(),
     );
